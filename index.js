@@ -1,6 +1,7 @@
+// global declerations of required node modules
 const inquirer = require('inquirer')
 const fs = require('fs')
-
+// begins prompting the user for info needed to generate the new readme file
 inquirer.prompt([
     {
         type: "input",
@@ -52,24 +53,27 @@ inquirer.prompt([
         message: "Are there any tests included in the project?",
         name: "test",
     },
+// after prompts are answered, the result is then written into a new readme file
 
 ]).then((res) => {
+    // const to store readme data into a new function
     const newREADME = writeREADME(res)
+    // function that writes the file and catches any errors 
     fs.writeFile("README.md", newREADME, (err) => err ? console.log(err): 
     console.log("Generating your new README file..."));
 });
-  
+  // function that takes in all the inputed data and places it appropriatly
 const writeREADME = result => {
     return ` # ${result.title}
     # License: 
     ![license](https://img.shields.io/badge/License-${result.license}-blue?style=for-the-badge&logo=appveyor.svg)
     # Table of Contents 
-    1. [Description](#description)
-    2. [Installation](#installation)
-    3. [Usage](#usage)
-    4. [Contributors](#contributors)
-    5. [License](#license)
-    6. [Questions](#questions)
+    [Description](#description)
+    [Installation](#installation)
+    [Usecase](#Usecase)
+    [Contributors](#contributors)
+    [License](#license)
+    [Questions](#questions)
     
     ## Description: 
     ${result.description}
