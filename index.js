@@ -65,32 +65,32 @@ inquirer.prompt([
   // function that takes in all the inputed data and places it appropriatly
 const writeREADME = result => {
     return ` # ${result.title}
-    # License: 
-    ![license](https://img.shields.io/badge/License-${result.license}-blue?style=for-the-badge&logo=appveyor.svg)
-    # Table of Contents 
-    [Description](#description)
-    [Installation](#installation)
-    [Usecase](#Usecase)
-    [Contributors](#contributors)
-    [License](#license)
-    [Questions](#questions)
+# License: 
+![license](https://img.shields.io/badge/License-${result.license}-blue?style=for-the-badge&logo=appveyor.svg)
+# Table of Contents 
+[Description](#description)
+[Installation](#installation)
+[Usecase](#Usecase)
+[Contributors](#contributors)
+[License](#license)
+[Questions](#questions)
     
-    ## Description: 
-    ${result.description}
-    ## Installation: 
-    ${result.installation}
-    ## Usecase: 
-    ${result.usecase}
-    ## License: 
-    ${result.license}
-    ## Contribution: 
-    ${result.contributors}
-    ## Testing: 
-    ${result.test}
-    ## Questions: 
-    Contact me by the following for any questions:
-    * Github:(https://github.com/${result.github})
-    * Email: ${result.email} `;
+## Description: 
+${result.description}
+## Installation: 
+${result.installation}
+## Usecase: 
+${result.usecase}
+## License: 
+${result.license}
+## Contribution: 
+${result.contributors}
+## Testing: 
+${result.test}
+## Questions: 
+Contact me by the following for any questions:
+* Github:(https://github.com/${result.github})
+* Email: ${result.email} `;
     
     }
 
