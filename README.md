@@ -5,20 +5,19 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usecase](#Usecase)
-* [License](#license)
 * [Contributors](#contributors)
-* [Testing](#test)
+* [License](#license)
 * [Questions](#questions)
     
 ## Description: 
-Using Node to create readme files based on user input in the command line using "node index.js"
+using node create a new readme file using the command line
 ## Installation: 
 inquire
 ## Usecase: 
-To create clean and professional readme files
+to create a clean and professional looking readme file
 ## License: 
 [Unlicensed](Unlicensed.txt)
-## Contributors: 
+## Contribution: 
 Nich Parson
 ## Testing: 
 none
