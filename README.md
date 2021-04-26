@@ -17,7 +17,7 @@ inquire
 To create clean and professional readme files
 ## License: 
 [Unlicensed](Unlicensed.txt)
-## Contribution: 
+## Contributors: 
 Nich Parson
 ## Testing: 
 none
