@@ -11,14 +11,14 @@
 7.[Questions](#questions)
     
 ## Description: 
-Using Node to create readme files based on user input in the command line using 'node index.js"
+Using Node to create readme files based on user input in the command line using "node index.js"
 ## Installation: 
 inquire
 ## Usecase: 
 To create clean and professional readme files
 ## License: 
 [Unlicensed](Unlicensed.txt)
-## Contribution: 
+## Contributors: 
 Nich Parson
 ## Testing: 
 none
