@@ -2,12 +2,13 @@
 # License: 
 ![license](https://img.shields.io/badge/License-[Unlicensed](Unlicensed.txt)-blue?style=for-the-badge&logo=appveyor.svg)
 # Table of Contents 
-[Description](#description)
-[Installation](#installation)
-[Usecase](#Usecase)
-[Contributors](#contributors)
-[License](#license)
-[Questions](#questions)
+1.[Description](#description)
+2.[Installation](#installation)
+3.[Usecase](#Usecase)
+4.[License](#license)
+5.[Contributors](#contributors)
+6.[Testing](#test)
+7.[Questions](#questions)
     
 ## Description: 
 Using Node to create readme files based on user input in the command line using 'node index.js"
