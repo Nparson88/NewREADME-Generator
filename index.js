@@ -26,13 +26,13 @@ inquirer.prompt([
 
     {
         type: "input",
-        message: "What is the purpose of your project",
+        message: "What is the usecase of your project",
         name: "usecase",
     },
 
     {
         type: "input",
-        message: "Add any instillation info",
+        message: "is there any installation guidlines?",
         name: "installation",
     },
     {
@@ -59,7 +59,8 @@ inquirer.prompt([
     // const to store readme data into a new function
     const newREADME = writeREADME(res)
     // function that writes the file and catches any errors 
-    fs.writeFile("README.md", newREADME, (err) => err ? console.log(err) :
+    fs.writeFile("README.md", newREADME, 
+        (err) => err ? console.log(err) :
         console.log("Generating your new README file..."));
 });
 // function that takes in all the inputed data and places it appropriatly
@@ -69,8 +70,8 @@ const writeREADME = result => {
 ![license](https://img.shields.io/badge/License-${result.license}-blue?style=for-the-badge&logo=appveyor.svg)
 # Table of Contents 
 * [Description](#description)
-* [Installation](#installation)
 * [Usecase](#Usecase)
+* [Installation](#installation)
 * [Contributors](#contributors)
 * [License](#license)
 * [Questions](#questions)
@@ -91,6 +92,5 @@ ${result.test}
 Contact me by the following for any questions:
 * Github:(https://github.com/${result.github})
 * Email: ${result.email} `;
-
 }
 
