@@ -7,27 +7,32 @@ inquirer.prompt([
         type: "input",
         message: "What is the title of your new project?",
         name: "title",
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
     {
         type: "input",
         message: "What is your github username?",
         name: "github",
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
     {
         type: "input",
         message: "What email would you like to attach this to?",
         name: "email",
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
     {
         type: "input",
         message: "Write a brief description of your new project",
         name: "description",
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
 
     {
         type: "input",
         message: "What is the usecase of your project",
         name: "usecase",
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
 
     {
@@ -39,7 +44,8 @@ inquirer.prompt([
         type: "checkbox",
         message: "Please choose the corresponding licence",
         name: "license",
-        choices: ["[ISC](ISC.txt)", "[MIT](MIT.txt)", "[Unlicensed](Unlicensed.txt)"]
+        choices: ["[ISC](ISC.txt)", "[MIT](MIT.txt)", "[Unlicensed](Unlicensed.txt)"],
+        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
 
     {
