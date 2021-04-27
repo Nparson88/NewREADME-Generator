@@ -45,7 +45,6 @@ inquirer.prompt([
         message: "Please choose the corresponding licence",
         name: "license",
         choices: ["[ISC](ISC.txt)", "[MIT](MIT.txt)", "[Unlicensed](Unlicensed.txt)"],
-        validate: (value) => {if(value){return true} else {return "cannot be blank"}},
     },
 
     {
